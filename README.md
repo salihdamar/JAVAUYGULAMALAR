@@ -1,2 +1,0 @@
-# JAVA
-Örnek Java Uygulamaları
