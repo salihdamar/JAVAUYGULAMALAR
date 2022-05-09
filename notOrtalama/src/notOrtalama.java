@@ -2,15 +2,23 @@ import java.util.Scanner;
 
 public class notOrtalama {
     public static void main(String[] args) {
-            //Değişkenler
-            int mat, fizik, kimya, turkce, tarih, muzik;
+        /*
+        Not Ortalaması Hesaplayan Program Java ile Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik derslerinin sınav puanlarını kullanıcıdan alan 
+        ve ortalamalarını hesaplayıp ekrana bastırılan programı yazın.
+        
+        Ödev:
+        Aynı program içerisinde koşullu ifadeler kullanılarak, eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti" , küçük ise 
+        "Sınıfta Kaldı" yazsın.Not : If ve Else kullanılmayacak...        
+        */
+            //Değişkenler 
+            int matematik, fizik, kimya, turkce, tarih, muzik;
 
             //Scanner Sınıfı
             Scanner sc = new Scanner(System.in);
 
             //Kullanıcıdan Veri Alma
             System.out.print("Matematik Notunuzu Giriniz : ");
-            mat = sc.nextInt();
+            matematik = sc.nextInt();
 
             System.out.print("Fizik Notunuzu Giriniz : ");
             fizik = sc.nextInt();
@@ -27,11 +35,11 @@ public class notOrtalama {
             System.out.print("Müzik Notunuzu Giriniz : ");
             muzik = sc.nextInt();
 
-            //Verilerin Ortalamasını Alma
+            //Girilen Notların Ortalamasını Al
             int toplam = mat + fizik + kimya + turkce + tarih + muzik;
             double sonuc = toplam / 6;
 
-            //Ekrana Not Ortalaması Yazdırma
+            //Not Ortalaması Yazdır
             System.out.println("Ortalamanız : "+sonuc);
 
             //Sınıf Geçip Geçmemesi?
