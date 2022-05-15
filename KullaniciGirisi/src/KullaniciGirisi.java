@@ -10,7 +10,6 @@ public class KullaniciGirisi {
         *  oluşturuldu" yazan programı yazınız.
         */
 
-
         //Değişkenleri Tanımla
         String kullaniciAdi, parola, yeniParola;
 
@@ -33,15 +32,15 @@ public class KullaniciGirisi {
                     "\n Sıfırlamak istiyorsan '1' " +
                     "\n İstemiyorsan '2' seç.");
             int secim=sc.nextInt();
+            sc.nextLine();     // nextInt() kendinden sonra gelen nextLine() değer almasını engelliyor.
 
             switch (secim){
                 case 1:
-
                     System.out.print("Yeni Bir Parola Giriniz: ");
                     yeniParola= sc.nextLine();
 
                     if (yeniParola.equals("java123")){
-                        System.out.print("Yeni Parolanız eski parola aynı Giriniz: ");
+                        System.out.print("Yeni Parolanız eski parolanızla aynı. Üzgünüm Parolanız Sıfırlanmadı ");
                     }
                     else {
                         System.out.print("Tebrikler Parolanız Sıfırlandı" );
@@ -50,9 +49,10 @@ public class KullaniciGirisi {
 
                     break;
                 case 2:
+                     System.out.print("Parolanızı Sıfırlanmak istemediniz." );
                     break;
                 default:
-                    System.out.println("Lütfen '1' veya '2' değerlerinin birini seçiniz.");
+                    System.out.println("Lütfen '1' veya '2' değerlerinden birini giriniz.");
             }
         }
     }
