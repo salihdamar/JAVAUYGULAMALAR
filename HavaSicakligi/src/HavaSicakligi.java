@@ -15,7 +15,7 @@ public class HavaSicakligi {
         int sicaklik;
 
         Scanner sc=new Scanner(System.in);
-        System.out.println("Sıcaklık Değerini Giriniz(Derce Cinsinden)");
+        System.out.println("Sıcaklık Değerini Giriniz(Derece Cinsinden)");
         sicaklik=sc.nextInt();
 
         /* Üç parça halinde koşullar oluşturuldu
