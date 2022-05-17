@@ -14,6 +14,7 @@ public class SinifGecme {
         int  matematik,fizik,turkce,kimya,muzik;
         double notOrtalama=0;
         int sayac=0;
+        int toplam=0;
 
         // Not Değeri Al
         Scanner sc=new Scanner(System.in);
@@ -21,50 +22,50 @@ public class SinifGecme {
         System.out.print("Matematik notunu giriniz: ");
         matematik= sc.nextInt();
         if (0<=matematik && matematik<=100){
-            matematik=matematik;
+            toplam+=matematik;
             sayac++;
         }else{
-            matematik=0;
+            System.out.print("Geçersiz Değer Araliğinda Bir Not Girdiniz.");
         }
 
         System.out.print("Fizik notunu giriniz: ");
         fizik= sc.nextInt();
         if (0<=fizik && fizik<=100){
-            fizik=fizik;
+           toplam+=fizik;
             sayac++;
         }else{
-            fizik=0;
+             System.out.print("Geçersiz Değer Araliğinda Bir Not Girdiniz.");
         }
 
 
         System.out.print("Türkçe notunu giriniz: ");
         turkce= sc.nextInt();
         if (0<=turkce && turkce<=100){
-            turkce=turkce;
+            toplam+=turkce;
             sayac++;
         }else{
-            turkce=0;
+            System.out.print("Geçersiz Değer Araliğinda Bir Not Girdiniz.");
         }
 
         System.out.print("Kimya notunu giriniz: ");
         kimya= sc.nextInt();
         if (0<=kimya && kimya<=100){
-            kimya=kimya;
+            toplam+=kimya;
             sayac++;
         }else{
-            kimya=0;
+             System.out.print("Geçersiz Değer Araliğinda Bir Not Girdiniz.");
         }
 
         System.out.print("Müzik notunu giriniz: ");
         muzik = sc.nextInt();
-        if (0<=muzik && muzik<=100){
+        if (0<=muzik && muzik<=100){            
+            toplam+=muzik;
             sayac++;
-            muzik=muzik;
         }else{
-            muzik=0;
+             System.out.print("Geçersiz Değer Araliğinda Bir Not Girdiniz.");
         }
 
-        notOrtalama = (matematik + fizik + turkce + kimya + muzik) / sayac;
+        notOrtalama = topla/sayac;
 
         if (notOrtalama<55){
             System.out.println("Sınıfta Kaldınız.");
