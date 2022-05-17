@@ -18,13 +18,15 @@ public class HavaSicakligi {
         System.out.println("Sıcaklık Değerini Giriniz(Derce Cinsinden)");
         sicaklik=sc.nextInt();
 
-        /* İki parça halinde koşullar oluşturuldu
+        /* Üç parça halinde koşullar oluşturuldu
 
         boolean kayak= sicaklik<5;
         boolean sinema= 5<=sicaklik && sicaklik<15;
+        boolean piknik= 15<=sicaklik && sicaklik<25;
 
-        String sinemaveYuzme = sinema ? "Sinemaya Gidebilirsiniz":"Yüzmeye Gidebilirsiniz";
-        String durum = kayak ? "Kayak Yapabilirsiniz" : sinemaveYuzme;
+        String YuzmePiknik = piknik ? "Pikniğe Gidebilirsiniz":"Yüzmeye Gidebilirsiniz";
+        String sinemaYuzmePiknik = sinema ? "Sinemaya Gidebilirsiniz":YuzmePiknik;
+        String durum = kayak ? "Kayak Yapabilirsiniz" : sinemaYuzmePiknik;
         */
 
         // Tek parça halinde koşullar oluşturuldu
