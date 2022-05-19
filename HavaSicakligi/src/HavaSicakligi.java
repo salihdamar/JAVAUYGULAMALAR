@@ -19,11 +19,11 @@ public class HavaSicakligi {
         sicaklik=sc.nextInt();
 
         /* Üç parça halinde koşullar oluşturuldu
-
         boolean kayak= sicaklik<5;
         boolean sinema= 5<=sicaklik && sicaklik<15;
         boolean piknik= 15<=sicaklik && sicaklik<25;
 
+        // Sondan Başlayarak Koşul oluşturduk
         String YuzmePiknik = piknik ? "Pikniğe Gidebilirsiniz":"Yüzmeye Gidebilirsiniz";
         String sinemaYuzmePiknik = sinema ? "Sinemaya Gidebilirsiniz":YuzmePiknik;
         String durum = kayak ? "Kayak Yapabilirsiniz" : sinemaYuzmePiknik;
