@@ -14,10 +14,8 @@ public class SayilariBuyuktenKucugeSirala {
         System.out.println("Üçüncü Sayiyi Giriniz");
         sayi3=sc.nextInt();
 
-        if (sayi1 > sayi2 && sayi1 > sayi3)
-        {
-            if (sayi2 >sayi3)
-            {
+        if (sayi1 > sayi2 && sayi1 > sayi3) {
+            if (sayi2 >sayi3) {
                 System.out.println( sayi1 +" > " + sayi2 +" > "+ sayi3 );
             } else{
                 System.out.println(sayi1 +" > " + sayi3+" > "+ sayi2);
