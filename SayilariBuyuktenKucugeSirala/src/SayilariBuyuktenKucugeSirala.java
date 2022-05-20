@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class SayilariBuyuktenKucugeSirala {
     public static void main(String[] args) {
+        
+        /*
+        * Ödev: Girilen 3 sayıyı "küçükten büyüğe" sıralayan programı yazınız.
+        */
         int sayi1, sayi2, sayi3;
         Scanner sc=new Scanner(System.in);
 
