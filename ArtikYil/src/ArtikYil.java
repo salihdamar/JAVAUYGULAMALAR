@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class ArtikYil {
     public static void main(String[] args) {
-
         /**
         * Java ile kullanıcının girdiği yılın artık olup olmadığını bulan programı yazınız.
         * Artık Yıl Nedir?: Artık yıl, Miladî takvimde 365 yerine 366 günü olan yıl. Bu fazladan
@@ -16,30 +15,27 @@ public class ArtikYil {
         * 400'e tam olarak bölünebilenlerin artık yıl kabul edilmesinin nedeni, bir astronomik yılın 365,25
         * gün değil, yaklaşık olarak 365,242 gün olmasından kaynaklanan hatayı gidermektir.
         */
-
-        Scanner sc=new Scanner(System.in);
-
+        
         boolean artikYil = false;
         int yil;
 
+        Scanner sc=new Scanner(System.in);
         System.out.print("Yil Giriniz:");
         yil=sc.nextInt();
 
         // Yıl 4'e Bölünüyor mu
         if (yil % 4 == 0) {
-
-            // Yıl 100'e Bölünüyor mu
-            if (yil % 100 == 0) {
-
-                // Yıl 400'e Bölünüyor mu
-                if (yil % 400 == 0){
+                // Yıl 100'e Bölünüyor mu
+                if (yil % 100 == 0) {
+                        // Yıl 400'e Bölünüyor mu
+                        if (yil % 400 == 0){
+                            artikYil = true;
+                        }else{
+                            artikYil = false;
+                        }
+                }else {
                     artikYil = true;
-                }else{
-                    artikYil = false;
                 }
-            }else {
-                artikYil = true;
-            }
         } else{
             artikYil = false;
         }
@@ -50,6 +46,5 @@ public class ArtikYil {
         }else{
             System.out.println(yil + " yılı bir artık yıldır değildir !");
         }
-
     }
 }
