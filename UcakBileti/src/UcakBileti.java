@@ -7,7 +7,8 @@ public class UcakBileti {
          * - Kullanıcıdan Mesafe (KM), yaşı ve yolculuk tipi (Tek Yön, Gidiş-Dönüş) bilgilerini alın.
          * - Mesafe başına ücret 0,10 TL / km olarak alın.
          * - İlk olarak uçuşun toplam fiyatını hesaplayın ve sonrasında ki koşullara göre müşteriye aşağıdaki indirimleri uygulayın ;
-         *      - Kullanıcıdan alınan değerler geçerli (mesafe ve yaş değerleri pozitif sayı, yolculuk tipi ise 1 veya 2) olmalıdır. Aksi takdirde kullanıcıya "Hatalı Veri Girdiniz !" şeklinde bir uyarı verilmelidir.
+         *      - Kullanıcıdan alınan değerler geçerli (mesafe ve yaş değerleri pozitif sayı, yolculuk tipi ise 1 veya 2) olmalıdır. 
+         *         Aksi takdirde kullanıcıya "Hatalı Veri Girdiniz !" şeklinde bir uyarı verilmelidir.
          *      - Kişi 12 yaşından küçükse bilet fiyatı üzerinden %50 indirim uygulanır.
          *      - Kişi 12-24 yaşları arasında ise bilet fiyatı üzerinden %10 indirim uygulanır.
          *      - Kişi 65 yaşından büyük ise bilet fiyatı üzerinden %30 indirim uygulanır.
@@ -30,16 +31,17 @@ public class UcakBileti {
 
         System.out.print("Yolculuk Tipini Giriniz (Tek Yön için: 1, Gidiş Dönüş için: 2): ");
         yolculukTipi = sc.nextInt();
-
+        
+        biletFiyati=mesafe*mesafeBasiUcret;
 
          // yolculuk tipine göre tutar hesapla
          switch (yolculukTipi){
              case 1:
-                 biletFiyati=mesafe*0.10;
+                 biletFiyati= biletFiyati;
                  break;
              case 2:
                  // Gidiş-Dönüş iki bilet olacağı için 2 ile çarpıldı ve %20 ((1-0.2)= 0.8) uygulandı.
-                 biletFiyati=(mesafe*0.10)*2*0.8;
+                 biletFiyati*=2*0.8;
                  break;
              default:
                  isHata=true;
@@ -61,7 +63,6 @@ public class UcakBileti {
              }else {
                  System.out.println("Hatalı Veri Girdiniz");
              }
-
          }else {
              System.out.println("Hatalı Yolculuk Tipi Girdiniz. Lütfen 1 veya 2 Giriniz");
          }
