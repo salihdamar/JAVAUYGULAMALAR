@@ -31,7 +31,6 @@ public class BurcBul {
         System.out.print("Gün giriniz: ");
         gun = sc.nextInt();
 
-
         // Ay ve gun değeri kontrol et
         if (ay == 1) {
             if (1 <= gun && gun<=31){
@@ -161,7 +160,6 @@ public class BurcBul {
         // Hata değeri true ise hata ver.
         if (isHata){
             System.out.println("Hatalı Değer Girdiniz.Lütfen Tekrar Giriniz.");
-
         }else {
             System.out.println("Burcunuz: " + burc);
         }
