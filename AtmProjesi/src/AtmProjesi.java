@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class AtmProjesi {
 
     public static void main(String[] args) {
+        
+        /**Java döngüler ile kullanıcının banka hesabını yönetebildiği bir ATM projesi yapınız.
+         */
 
         String kullaniciAdi, parola;
         int girisHakki = 3;
