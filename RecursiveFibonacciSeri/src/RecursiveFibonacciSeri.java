@@ -6,7 +6,6 @@ public class RecursiveFibonacciSeri {
      */
 
     static int fibonacci(int sayi){
-
         if (sayi==1 || sayi==2){
             return 1;
         }
@@ -18,6 +17,5 @@ public class RecursiveFibonacciSeri {
         System.out.print("Bir sayı giriniz:");
         int input=sc.nextInt();
         System.out.println(fibonacci(input));
-
     }
 }
