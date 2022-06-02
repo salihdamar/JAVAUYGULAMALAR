@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class MaxMinSayilar {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
+                
         int sayac,sayi,min=0,max=0;
-
+        Scanner input = new Scanner(System.in);
         System.out.print("Kac sayi gireceksiniz : ");
         sayac = input.nextInt();
 
