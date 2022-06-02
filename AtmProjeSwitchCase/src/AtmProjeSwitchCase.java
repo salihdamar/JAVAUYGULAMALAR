@@ -6,9 +6,7 @@ public class AtmProjeSwitchCase {
          * */
 
         String kullaniciAdi, parola;
-        int girisHakki = 3;
-        int bakiye = 1500;
-        int secim;
+        int girisHakki = 3, bakiye = 1500, secim;
 
         Scanner input = new Scanner(System.in);
         while (girisHakki > 0) {
