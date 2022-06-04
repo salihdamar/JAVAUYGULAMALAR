@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class RecursiveDesen {
+    
     /** Java dilinde kullanıcıdan alınan n değerine göre aşağıdaki kurala uyan döngü kullanmadan bir
      * "Recursive" metot yazın.
      * Kural : Girilen sayı 0 veya negatif olduğu yere kadar girilen sayıdan 5 rakamını çıkarın. Her
