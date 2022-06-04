@@ -14,7 +14,6 @@ public class HarmonikSeri {
         System.out.println("Bir Sayı Giriniz");
         sayi=sc.nextInt();
 
-
         for (double i=1; i<=sayi; i++){
             toplam+=(1/i);
         }
