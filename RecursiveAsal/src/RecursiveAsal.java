@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class RecursiveAsal {
+    
     /**Java dilinde "Recursive" metot kullanarak, kullanıcıdan alınan sayının "Asal" sayı olup olmadığını
      * bulan programı yazın. yazınız.
      */
@@ -17,13 +18,11 @@ public class RecursiveAsal {
         if (i * i > sayi){
             return true;
         }
-
         return asal(sayi, i + 1);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Bir sayıyı giriniz: ");
         int sayi = sc.nextInt();
 
@@ -32,7 +31,5 @@ public class RecursiveAsal {
         }else{
             System.out.println(sayi + " sayısı asal sayı değildir.");
         }
-
-
     }
 }
