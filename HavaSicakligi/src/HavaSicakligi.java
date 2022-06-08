@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class HavaSicakligi {
     public static void main(String[] args) {
-
         /**
          * Koşullar :
          *  -Sıcaklık 5'dan küçük ise "Kayak" yapmayı öner.
