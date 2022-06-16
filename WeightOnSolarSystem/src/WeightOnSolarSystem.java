@@ -3,11 +3,9 @@ import java.util.Scanner;
 public class WeightOnSolarSystem {
     public static void main(String[] args) {
 
-
         Scanner input = new Scanner(System.in);
         System.out.print("Please Enter Your Weight on Earth in Lbs:  ");
         double weight = input.nextDouble();
-
 
         System.out.print("Choose a Location in our Solar System: \n 1. Venus \n 2. Mercury \n " +
                 "3. Mars \n 4. Jupiter \n 5. Saturn \n 6. Uranus \n 7. Neptune \n " +
