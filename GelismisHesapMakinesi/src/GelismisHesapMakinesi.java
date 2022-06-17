@@ -31,7 +31,6 @@ public class GelismisHesapMakinesi {
             }
             sonuc -= sayi;
         }
-
         System.out.println("Sonuç : " + sonuc);
     }
 
@@ -52,7 +51,6 @@ public class GelismisHesapMakinesi {
             }
             sonuc *= sayi;
         }
-
         System.out.println("Sonuç : " + sonuc);
     }
 
@@ -75,7 +73,6 @@ public class GelismisHesapMakinesi {
             }
             sonuc /= sayi;
         }
-
         System.out.println("Sonuç : " + sonuc);
     }
 
@@ -90,7 +87,6 @@ public class GelismisHesapMakinesi {
         for (int i = 1; i <= us; i++) {
             sonuc *= taban;
         }
-
         System.out.println("Sonuç : " + sonuc);
     }
 
