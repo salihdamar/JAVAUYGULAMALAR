@@ -12,7 +12,6 @@ public class HavaSicakligi {
          * Ödev: Aynı örnek üzerinden if koşulları başka hangi şekilde oluşturulabilirdi farklı çözüm yolları bulunuz.
          */
         int sicaklik;
-
         Scanner sc=new Scanner(System.in);
         System.out.println("Sıcaklık Değerini Giriniz(Derece Cinsinden)");
         sicaklik=sc.nextInt();
